@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+
+    <style>
+        h1{
+            font-size: .8rem;
+            background-color: rgb(177, 177, 0);
+            margin: 0;
+            padding: .2rem;
+        }
+        
+        h2{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        label{
+            font-weight: bold;
+            display: flex;
+            width: 100px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+        div{
+            display: flex;
+        }
+        
+        .container-check{
+            display: flex;
+            width: 350px;
+            flex-wrap: wrap;
+        }
+
+        .buttons{
+            display: flex;
+            gap: .5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <form action="">
+            <h1>SISTEMA DE GESTÃO ACADÊMICA</h1>
+            <h2>MANUTENÇÃO USUÁRIOS DO SISTEMA INTERNO</h2>
+
+            <div>
+                <label for="">Login</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">Senha</label>
+                <input type="password">
+            </div>
+            
+            <div>
+                <label for="">Status</label>
+                <select name="" id="">
+                    <option value="1">Ativo</option>
+                    <option value="2">Inativo</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="">Tipo</label>
+                <span>
+                    <input type="radio"> Técnico
+                </span>
+                <span>
+                    <input type="radio"> Professor
+                </span>
+                <span>
+                    <input type="radio"> Aluno
+                </span>
+            </div>
+
+            <div>
+                <label for="">Perfil</label>
+                <span>
+                    <input type="radio"> Convidado
+                </span>
+                <span>
+                    <input type="radio"> Administrador
+                </span>
+            </div>
+            
+            <div>
+                <label for="">Observações</label>
+                <textarea name="" id="" rows="5"></textarea>
+            </div>
+            
+            <div class="modulos-container">
+                <label for="">Módulos</label>
+                <div class="container-check">
+                    <span>
+                        <input type="checkbox"> Compras
+                    </span>
+                    <span>
+                        <input type="checkbox"> Biblioteca
+                    </span>
+                    <span>
+                        <input type="checkbox"> Acadêmico
+                    </span>
+                    <span>
+                        <input type="checkbox"> Documentação
+                    </span>
+                    <span>
+                        <input type="checkbox"> Recursos humanos
+                    </span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" name="" id="" value="Cadastrar">
+                <input type="reset" name="" id="" value="Excluir">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
