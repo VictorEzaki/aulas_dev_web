@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border: 1px grey solid;
+    padding: 1rem;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.title{
+    text-align: center;
+    color: cadetblue;
+}
