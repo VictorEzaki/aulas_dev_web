@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercicio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
