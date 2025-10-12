@@ -7,7 +7,14 @@
     <title>Aula Javascript</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
+
+    <script src="./assets/js/exercicio-01.js" defer></script>
+    <script src="./assets/js/exercicio-02.js" defer></script>
+    <script src="./assets/js/exercicio-03.js" defer></script>
+    <script src="./assets/js/exercicio-04.js" defer></script>
+    <script src="./assets/js/exercicio-05.js" defer></script>
+    <script src="./assets/js/exercicio-06.js" defer></script>
+    <script src="./assets/js/exercicio-07.js" defer></script>
 
 </head>
 
@@ -20,127 +27,85 @@
     </header>
     <main class="lista-exercicios">
 
-        <div class="exercicio">
-            <p class="pergunta">
-                Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça um programa que
-                calcule e escreva:
-            </p>
-            <li>a maior e a menor altura do grupo;</li>
-            <li>a média de altura das mulheres;</li>
-            <li>o número de homens.</li>
+        <div class="exercicio" id="exercicio-01">
+            <h2>Altura e Sexo de 15 Pessoas</h2>
 
-            <div id="form-ex1" class="inputs">
-                <div class="group">
-                    <span>
-                        Pessoa 1:
-                        <input type="number" class="alturas" id="altura1">
-                        Feminino <input type="radio" name="genero1" value="f">
-                        Masculino <input type="radio" name="genero1" value="m">
-                    </span>
-                    <span>
-                        Pessoa 2:
-                        <input type="number" class="alturas" id="altura2">
-                        Feminino <input type="radio" name="genero2" value="f">
-                        Masculino <input type="radio" name="genero2" value="m">
-                    </span>
-                    <span>
-                        Pessoa 3:
-                        <input type="number" class="alturas" id="altura3">
-                        Feminino <input type="radio" name="genero3" value="f">
-                        Masculino <input type="radio" name="genero3" value="m">
-                    </span>
-                    <span>
-                        Pessoa 4:
-                        <input type="number" class="alturas" id="altura4">
-                        Feminino <input type="radio" name="genero4" value="f">
-                        Masculino <input type="radio" name="genero4" value="m">
-                    </span>
-                    <span>
-                        Pessoa 5:
-                        <input type="number" class="alturas" id="altura5">
-                        Feminino <input type="radio" name="genero5" value="f">
-                        Masculino <input type="radio" name="genero5" value="m">
-                    </span>
-                </div>
-
-                <div class="group">
-                    <span>
-                        Pessoa 6:
-                        <input type="number" class="alturas" id="altura6">
-                        Feminino <input type="radio" name="genero6" value="f">
-                        Masculino <input type="radio" name="genero6" value="m">
-                    </span>
-                    <span>
-                        Pessoa 7:
-                        <input type="number" class="alturas" id="altura7">
-                        Feminino <input type="radio" name="genero7" value="f">
-                        Masculino <input type="radio" name="genero7" value="m">
-                    </span>
-                    <span>
-                        Pessoa 8:
-                        <input type="number" class="alturas" id="altura8">
-                        Feminino <input type="radio" name="genero8" value="f">
-                        Masculino <input type="radio" name="genero8" value="m">
-                    </span>
-                    <span>
-                        Pessoa 9:
-                        <input type="number" class="alturas" id="altura9">
-                        Feminino <input type="radio" name="genero9" value="f">
-                        Masculino <input type="radio" name="genero9" value="m">
-                    </span>
-                    <span>
-                        Pessoa 10:
-                        <input type="number" class="alturas" id="altura10">
-                        Feminino <input type="radio" name="genero10" value="f">
-                        Masculino <input type="radio" name="genero10" value="m">
-                    </span>
-                </div>
-
-                <div class="group">
-                    <span>
-                        Pessoa 11:
-                        <input type="number" class="alturas" id="altura11">
-                        Feminino <input type="radio" name="genero11" value="f">
-                        Masculino <input type="radio" name="genero11" value="m">
-                    </span>
-                    <span>
-                        Pessoa 12:
-                        <input type="number" class="alturas" id="altura12">
-                        Feminino <input type="radio" name="genero12" value="f">
-                        Masculino <input type="radio" name="genero12" value="m">
-                    </span>
-                    <span>
-                        Pessoa 13:
-                        <input type="number" class="alturas" id="altura13">
-                        Feminino <input type="radio" name="genero13" value="f">
-                        Masculino <input type="radio" name="genero13" value="m">
-                    </span>
-                    <span>
-                        Pessoa 14:
-                        <input type="number" class="alturas" id="altura14">
-                        Feminino <input type="radio" name="genero14" value="f">
-                        Masculino <input type="radio" name="genero14" value="m">
-                    </span>
-                    <span>
-                        Pessoa 15:
-                        <input type="number" class="alturas" id="altura15">
-                        Feminino <input type="radio" name="genero15" value="f">
-                        Masculino <input type="radio" name="genero15" value="m">
-                    </span>
-                </div>
-
-
-                <button id="calcular">Calcular</button>
-            </div>
-
+            <div id="inputs-container-01"></div>
+            <button id="calcular-01">Calcular</button>
+            
+            <div id="resultado-01"></div>
+        </div>
+        
+        <div class="exercicio" id="exercicio-02">
+            
+            <h2>Pesquisa de Opinião - Cinema</h2>
+            
+            <form id="form-pesquisa">
+                <div id="inputs-container-02"></div>
+                <button type="submit">Calcular Resultados</button>
+            </form>
+            
+            <div id="resultado-02"></div>
 
         </div>
-        <div class="exercicio"></div>
-        <div class="exercicio"></div>
-        <div class="exercicio"></div>
-        <div class="exercicio"></div>
-        <div class="exercicio"></div>
-        <div class="exercicio"></div>
+
+        <div class="exercicio" id="exercicio-03">
+
+            <h2>Somar Números Pares e Primos</h2>
+
+            <p>Digite 10 números:</p>
+            <div id="inputs-03"></div>
+
+            <button id="calcular-03">Calcular</button>
+
+            <div id="resultado-03"></div>
+
+        </div>
+
+        <div class="exercicio" id="exercicio-04">
+
+            <h2>Operações Aritméticas</h2>
+            <input type="number" id="num1-04" placeholder="Número 1">
+            <input type="number" id="num2-04" placeholder="Número 2">
+            <br>
+            <button id="calcular-04">Calcular</button>
+
+            <div id="resultado-04"></div>
+
+        </div>
+
+        <div class="exercicio" id="exercicio-05">
+            <h2>Cadastro de 10 Pessoas</h2>
+
+            <div id="form-container"></div>
+
+            <button id="calcular-05">Calcular</button>
+
+            <div id="resultado-05"></div>
+        </div>
+
+        <div class="exercicio">
+
+            <h2>Calculadora de Reajuste Salarial</h2>
+            <label for="salario">Salário atual (R$):</label>
+            <input type="number" id="salario" min="0" step="0.01" placeholder="Digite o salário">
+            <button id="calcular-06">Calcular Reajuste</button>
+
+            <div id="resultado-06"></div>
+
+        </div>
+
+        <div class="exercicio">
+
+            <h2>Escreva a Data por Extenso</h2>
+
+            <label for="data">Digite a data (dd/mm/aaaa):</label>
+            <input type="text" id="data" placeholder="Ex: 22/04/1983">
+            <button id="mostrarData">Mostrar Data por Extenso</button>
+
+            <div id="resultado-07"></div>
+
+        </div>
 
     </main>
     <footer>
@@ -148,7 +113,6 @@
         <span>&copy; Feito por Victor Ezaki</span>
 
     </footer>
-
 </body>
 
 </html>
