@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#novaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+button, input {
+    width: 100px;
+}
