@@ -28,7 +28,7 @@ body {
 
 label {
     display: inline-flex;
-    width: 150px;
+    width: 170px;
     justify-content: flex-end;
 }
 
@@ -77,4 +77,24 @@ input {
 input:focus {
     border-color: #0077cc;
     outline: none;
+}
+
+.container-button {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+#button-back {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    text-decoration: none;
 }
